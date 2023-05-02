@@ -2,20 +2,28 @@
 //  ContentView.swift
 //  Scrambler
 //
-//  Created by M I C H A E L on 01.05.2023.
+//  Created by M I C H A E L on 02.05.2023.
 //
 
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        ZStack {
+            LinearGradient(
+                gradient: Gradient(colors: [Color.gray, Color.purple]),
+                startPoint: .bottom,
+                endPoint: .top
+            )
+            .ignoresSafeArea()
+            
+            VStack {
+                CustomTextContentView()
+                CustomTextContentView()
+                Spacer()
+            }
+            .padding()
         }
-        .padding()
     }
 }
 
