@@ -11,7 +11,8 @@ import SwiftUI
 struct ScramblerApp: App {
     var body: some Scene {
         WindowGroup {
-            CustomTextContentView()
+            ContentView()
+                .preferredColorScheme(.light)
         }
     }
 }
