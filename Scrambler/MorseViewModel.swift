@@ -7,32 +7,32 @@
 
 import Foundation
 
-//protocol MorseViewModelProtocol {
-//
-//    var topFieldHeader: String { get }
-//    var topText: String { get }
-//    var topSymbolsCount: String { get }
-//    var bottomFieldHeader: String { get }
-//    var bottomText: String { get }
-//    var bottomSymbolsCount: String { get }
-//
-//    var topDeleteIsDisabled: Bool { get }
-//    var topOpenIsDisabled: Bool { get }
-//    var topCameraIsDisabled: Bool { get }
-//    var topPasteIsDisabled: Bool { get }
-//    var bottomReverseIsDisabled: Bool { get }
-//    var bottomOpenIsDisabled: Bool { get }
-//    var bottomCopyIsDisabled: Bool { get }
-//
-//    func topDeleteAction()
-//    func topOpenAction()
-//    func topCameraAction()
-//    func topPasteAction()
-//
-//    func bottomCopyAction()
-//    func bottomOpenAction()
-//    func bottomReverseAction()
-//}
+protocol MorseViewModelProtocol {
+
+    var topFieldHeader: String { get }
+    var topText: String { get }
+    var topSymbolsCount: String { get }
+    var bottomFieldHeader: String { get }
+    var bottomText: String { get }
+    var bottomSymbolsCount: String { get }
+
+    var topDeleteIsDisabled: Bool { get }
+    var topOpenIsDisabled: Bool { get }
+    var topCameraIsDisabled: Bool { get }
+    var topPasteIsDisabled: Bool { get }
+    var bottomReverseIsDisabled: Bool { get }
+    var bottomOpenIsDisabled: Bool { get }
+    var bottomCopyIsDisabled: Bool { get }
+
+    func topDeleteAction()
+    func topOpenAction()
+    func topCameraAction()
+    func topPasteAction()
+
+    func bottomCopyAction()
+    func bottomOpenAction()
+    func bottomReverseAction()
+}
 
 
 final class MorseViewModel: ObservableObject {
